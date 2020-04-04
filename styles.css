@@ -78,6 +78,7 @@
     .choice:hover {
         background:darkmagenta;
         cursor:pointer;
+        border:10px solid green;
     }
 
     .choose-message {
