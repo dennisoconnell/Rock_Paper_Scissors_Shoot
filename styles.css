@@ -1,4 +1,86 @@
-img {
-    height: 150px;
-    width: 150px;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    img {
+        height: 150px;
+        width: 150px;
+    }
+
+    header {
+        background:white;
+        color: black;
+        text-align: center;
+        padding: 20px;   
+    }
+
+    body {
+        background: #262632;
+        font-family: 'Kanit', sans-serif;
+        color: white;
+    }
+
+    .score-board {
+        text-align: center;
+        font-size: 40px;
+        margin:20px auto;
+        border: 2px solid;
+        border-radius: 5px;
+        width: 320px;
+        height: 100px;
+        position: relative;
+        padding: 20px;
+    }
+
+    .badge {
+        background: darkmagenta;
+        font-size:15px;
+        border: 2px solid;
+        border-radius: 5px;
+    }
+
+    #user-label {
+        position: absolute;
+        top: 40px;
+        left: -40px;
+        width:80px;
+    }
+
+    #computer-label {
+        position: absolute;
+        top: 40px;
+        right: -40px;
+        background: orange;
+        width:80px;
+    }
+
+    .choices {
+       text-align: center;
+    }
+
+    .choice{
+        display:inline-block;
+        margin:20px;
+        center: 50%; top: 50%;
+        border: 2px solid;
+        border-radius: 50%;
+        transition: all .4s ease;
+    }
+    
+    .result {
+
+        text-align:center;
+        padding: 20px;
+    }
+
+    .choice:hover {
+        background:darkmagenta;
+        cursor:pointer;
+    }
+
+    .choose-message {
+        text-align: center;
+        padding: 20px;
+    }
