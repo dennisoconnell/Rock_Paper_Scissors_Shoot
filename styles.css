@@ -63,14 +63,14 @@
     .choice{
         display:inline-block;
         margin:20px;
-        center: 50%; top: 50%;
+ 
+        top: 50%;
         border: 2px solid;
         border-radius: 50%;
         transition: all .4s ease;
     }
     
     .result {
-
         text-align:center;
         padding: 20px;
     }
@@ -78,10 +78,19 @@
     .choice:hover {
         background:darkmagenta;
         cursor:pointer;
-        border:10px solid green;
+        opacity:.5;
+        border:8px solid;
+    }
+    
+    .choice:active {
+        opacity: 1;
+        transition: .1s ease;
     }
 
     .choose-message {
-        text-align: center;
+        position:relative;
+        margin:auto;
+        width:100%; 
+        text-align:center;
         padding: 20px;
     }
