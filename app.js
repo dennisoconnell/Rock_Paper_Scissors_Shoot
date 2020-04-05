@@ -1,5 +1,6 @@
-var userScore = 0;
-var computerScore = 0;
+let userScore = 0;
+let computerScore = 0;
+
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
@@ -36,13 +37,15 @@ function win(userChoice, computerChoice){
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = userChoice + " beats " + computerChoice + ". You win!";
+    document.getElementById(userChoice).style.border = "8px solid green";
 }
 
 function lose(userChoice, computerChoice){
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result.innerHTML = userChoice + " loses to " + computerChoice + ". You lose!";
+    result_p.innerHTML = userChoice + " loses to " + computerChoice + ". You lose!";
+    document.getElementById(userChoice).style.border = "8px solid red";
 }
 
 function tie(userChoice, computerChoice){
