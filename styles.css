@@ -78,7 +78,7 @@
     .choice:hover {
         background:darkmagenta;
         cursor:pointer;
-        opacity:.5;
+        opacity:.8;
         border:8px solid;
     }
     

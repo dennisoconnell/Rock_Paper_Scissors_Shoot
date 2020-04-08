@@ -37,8 +37,19 @@ function win(userChoice, computerChoice){
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = userChoice + " beats " + computerChoice + ". You win!";
-    document.getElementById(userChoice).style.border = "8px solid green";
+    change_green(userChoice);
+    setTimeout(change_back(userChoice), 2000);
 }
+
+    function change_green(userChoice){
+        console.log("TEST");
+        document.getElementById(userChoice).style.border = "8px solid green";
+        
+    }
+    function change_back(userChoice){
+        console.log("TEST");
+        document.getElementById(userChoice).style.border = "2px solid white";
+    }
 
 function lose(userChoice, computerChoice){
     computerScore++;
