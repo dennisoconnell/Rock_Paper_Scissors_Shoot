@@ -5,3 +5,4 @@
 1. DOM manipulation with Javascript.
 2. Using Regex to convert variables into strings
 3. Creating custom button animations in Javascript.
+4. CSS flexbox for responsiveness
