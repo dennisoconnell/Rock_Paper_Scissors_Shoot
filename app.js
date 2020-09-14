@@ -23,6 +23,21 @@ function main() {
   });
 }
 
+function translateChoice(choice){
+  if(choice === "r")
+  {
+    return "Rock";
+  }
+  else if (choice === "p")
+  {
+    return "Paper";
+  }
+  else if(choice === "s")
+  {
+    return "Scissors";
+  }
+}
+
 function getComputerChoice() {
   const choices = ["r", "p", "s"];
   const randomNumber = Math.floor(Math.random() * 3);
@@ -33,18 +48,7 @@ function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML = userChoice + " beats " + computerChoice + ". You win!";
-  change_green(userChoice);
-  setTimeout(change_back(userChoice), 2000);
-}
-
-function change_green(userChoice) {
-  console.log("TEST");
-  document.getElementById(userChoice).style.border = "8px solid green";
-}
-function change_back(userChoice) {
-  console.log("TEST");
-  document.getElementById(userChoice).style.border = "2px solid white";
+  result_p.innerHTML = translateChoice(userChoice) + " beats " + translateChoice(computerChoice) + ". You win!";
 }
 
 function lose(userChoice, computerChoice) {
@@ -52,13 +56,12 @@ function lose(userChoice, computerChoice) {
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML =
-    userChoice + " loses to " + computerChoice + ". You lose!";
-  document.getElementById(userChoice).style.border = "8px solid red";
+    translateChoice(userChoice) + " loses to " + translateChoice(computerChoice) + ". You lose!";
 }
 
 function tie(userChoice, computerChoice) {
   result_p.innerHTML =
-    userChoice + " ties with " + computerChoice + ". You tied!";
+    translateChoice(userChoice) + " ties with " + translateChoice(computerChoice) + ". You tied!";
 }
 
 function game(userChoice) {

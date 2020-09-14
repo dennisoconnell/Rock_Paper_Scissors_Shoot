@@ -3,6 +3,5 @@
  
  # What I learned
 1. DOM manipulation with Javascript.
-2. Using Regex to convert variables into strings
-3. Creating custom button animations in Javascript.
-4. CSS flexbox for responsiveness
+2. Creating custom button animations in CSS.
+3. Importing CSS files from the web
